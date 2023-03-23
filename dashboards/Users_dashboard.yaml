@@ -1,0 +1,20 @@
+# Visit https://docs.rilldata.com/references/project-files to learn more about Rill project files.
+
+display_name: "Users_dashboard"
+model: "data_steam"
+default_time_range: ""
+smallest_time_grain: ""
+timeseries: "timestamp"
+measures:
+  - label: Player Count
+    expression: sum(player_count)
+    description: Total number of records present
+    format_preset: humanize
+  - label: "Twitch viewers"
+    expression: "sum(twitch_viewers)"
+    description: ""
+    format_preset: humanize
+dimensions:
+  - label: App_name
+    property: app_name
+    description: ""
