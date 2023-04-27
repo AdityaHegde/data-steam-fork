@@ -1,0 +1,2 @@
+type: gcs
+uri: gs://test_harsh_rill/data-steam/*_twitch_max.csv
